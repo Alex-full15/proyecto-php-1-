@@ -10,12 +10,19 @@
 #La versión require_once() funcionan de la misma forma que sus respectivo, salvo que, al utilizar la versión _once, se impide la carga de un mismo archivo más de una vez.
 #Si requerimos el mismo código más de una vez corremos el riesgo de redeclaraciones de variables, funciones o clases. 
 
+require_once "controladores/inventario.controlador.php";
 require_once "controladores/plantilla.controlador.php";
-
 require_once "controladores/registro.controlador.php";
+require_once "controladores/roles.controlador.php";
 
-require_once "modelos/registro.modelo.php";
+
+
 require_once "modelos/conexion.php";
+require_once "modelos/inventario.modelo.php";
+require_once "modelos/registro.modelo.php";
+require_once "modelos/roles.modelo.php";
+
+
 
 
 $plantilla = new ControladorPlantilla();

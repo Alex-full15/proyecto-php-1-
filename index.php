@@ -14,6 +14,7 @@ require_once "controladores/inventario.controlador.php";
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/registro.controlador.php";
 require_once "controladores/roles.controlador.php";
+require_once "controladores/ingreso.controlador.php";
 
 
 

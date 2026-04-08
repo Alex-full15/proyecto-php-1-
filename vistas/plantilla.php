@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,15 +35,11 @@
 
                         include "modulos/".$_GET["modulo"].".php";
 
-                    }else{
-
-                        include "modulos/error404.php";
                     }
-
 
                 }else{
 
-                    include "modulos/registro.php";
+                    include "modulos/ingreso.php";
 
                 }
 

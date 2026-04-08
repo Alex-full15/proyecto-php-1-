@@ -14,7 +14,7 @@ CREATE TABLE inventarios (
 	pk_id_inventario INT AUTO_INCREMENT PRIMARY KEY,
     inve_nombre_producto VARCHAR(20),
     inve_cantidad_producto INT,
-    inve_precio_protducto FLOAT,
+    inve_precio_producto FLOAT,
     inve_fecha_registro TIMESTAMP
     );
 

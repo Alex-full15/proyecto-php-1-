@@ -4,16 +4,6 @@
             <ul class="nav nav-justified py-2 nav-pills">
                 <?php if (isset($_GET["modulo"])): ?>
 
-                    <?php if ($_GET["modulo"] == "registro"): ?>
-                        <li class="nav-item">
-                            <a href="index.php?modulo=registro" class="nav-link active">Registro</a>
-                        </li>
-                    <?php else: ?>
-                        <li class="nav-item">
-                            <a href="index.php?modulo=registro" class="nav-link">Registro</a>
-                        </li>
-                    <?php endif ?>
-
                     <?php if ($_GET["modulo"] == "ingreso"): ?>
                         <li class="nav-item">
                             <a href="index.php?modulo=ingreso" class="nav-link active">Ingreso</a>
@@ -24,13 +14,13 @@
                         </li>
                     <?php endif ?>
 
-                    <?php if ($_GET["modulo"] == "inicio"): ?>
+                    <?php if ($_GET["modulo"] == "registro"): ?>
                         <li class="nav-item">
-                            <a href="index.php?modulo=inicio" class="nav-link active">Inicio</a>
+                            <a href="index.php?modulo=registro" class="nav-link active">Registro</a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
-                            <a href="index.php?modulo=inicio" class="nav-link">Inicio</a>
+                            <a href="index.php?modulo=registro" class="nav-link">Registro</a>
                         </li>
                     <?php endif ?>
 
@@ -66,17 +56,15 @@
 
                 <?php else: ?>
                     <li class="nav-item">
+                        <a href="index.php?modulo=ingreso" class="nav-link active">Ingreso</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="index.php?modulo=roles" class="nav-link">Roles</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.php?modulo=registro" class="nav-link">Registro</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="index.php?modulo=ingreso" class="nav-link">Ingreso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.php?modulo=contenido" class="nav-link active">Inicio</a>
-                    </li>
+
                     <li class="nav-item">
                         <a href="index.php?modulo=inventario" class="nav-link">Inventario</a>
                     </li>

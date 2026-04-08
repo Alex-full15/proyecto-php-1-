@@ -22,5 +22,18 @@ class ModeloRegistro {
         $stmt->closeCursor();
         return $ok ? "ok" : "error";
     }
+    
+    static public function mdlMostrarUsuario($tabla, $usuario){
+
+    $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE pers_nombre = :usuario");
+
+    $stmt->bindParam(":usuario", $usuario, PDO::PARAM_STR);
+
+    $stmt->execute();
+
+    return $stmt->fetch();
 
 }
+
+}
+
